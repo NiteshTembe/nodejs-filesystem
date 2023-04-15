@@ -20,7 +20,7 @@ app.get("/backup/create", (req, res) => {
             fs.writeFileSync(`./backup/${date.toJSON().slice(0, 19).replace(/:/g,"-")}.txt`,dt.toString());
             res.send({"result":`${date.toJSON().slice(0, 19).replace(/:/g,"-")}.txt is created successfully in backup`});
           } catch (err) {
-            res.send({"err":err}); // send error if some err occured 
+            res.send({"Err":err}); // send error if some err occured 
           }
     
 });
@@ -31,7 +31,7 @@ app.get("/backup", (req, res) => {
             const files = fs.readdirSync("./backup");
             res.send({"Files": files}); // send list of files in array format from backup directory
           } catch (err) {
-            res.send({"err":err});  // send error if some err occured 
+            res.send({"Err":err});  // send error if some err occured 
           }
 });
 
