@@ -14,5 +14,4 @@ github repository URL
   
 
 REST API Documentation Link
-  
-![alt text](https://documenter.getpostman.com/view/26861485/2s93XyT31S?raw=true)
+  https://documenter.getpostman.com/view/26861485/2s93XyT31S
